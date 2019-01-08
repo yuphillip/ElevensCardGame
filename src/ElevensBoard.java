@@ -92,4 +92,13 @@ public class ElevensBoard extends Board {
 	private boolean containsJQK(List<Integer> selectedCards) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
 	}
+
+	public static printCards(ElevensBoard board)
+	{
+		List<Integer> cIndexes = board.cardIndexes();
+		for(int i = 0;i<cIndexes.size();i++)
+		{
+			System.out.println(board.toString());
+		}
+	}
 }
