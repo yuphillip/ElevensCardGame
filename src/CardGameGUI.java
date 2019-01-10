@@ -391,5 +391,6 @@ public class CardGameGUI extends JFrame implements ActionListener {
 		 */
 		public void mousePressed(MouseEvent e) {
 		}
+
 	}
 }

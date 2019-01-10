@@ -93,12 +93,12 @@ public class ElevensBoard extends Board {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
 	}
 
-	public static printCards(ElevensBoard board)
+	/*public static printCards(ElevensBoard board)
 	{
 		List<Integer> cIndexes = board.cardIndexes();
 		for(int i = 0;i<cIndexes.size();i++)
 		{
 			System.out.println(board.toString());
 		}
-	}
+	}*/
 }
