@@ -76,7 +76,7 @@ public class CardGameGUI extends JFrame implements ActionListener {
 	/** The coordinates of the card displays. */
 	private Point[] cardCoords;
 
-	/** kth element is true iff the user has selected card #k. */
+	/** kth element is true if the user has selected card #k. */
 	private boolean[] selections;
 	/** The number of games won. */
 	private int totalWins;
