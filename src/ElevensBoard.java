@@ -113,49 +113,40 @@ public class ElevensBoard extends Board {
 	 * @return true if the board entries in selectedCards
 	 *              include a jack, a queen, and a king; false otherwise.
 	 */
-	private boolean containsJQK(List<Integer> selectedCards)
-	{
+	private boolean containsJQK(List<Integer> selectedCards) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 9 *** */
-		boolean k=false;
-		boolean q=false;
-		boolean j=false;
-		if (selectedCards.size()==3)
-		{
-			for(int i=0;i<selectedCards.size();i++)
-			{
-				if (this.cardAt(i).rank()=="king")
-				{
-					k=true;
+		boolean k = false;
+		boolean q = false;
+		boolean j = false;
+		if (selectedCards.size() == 3) {
+			/*for (int i = 0; i < selectedCards.size(); i++) {
+				if (this.cardAt(i).rank().equals("king")) {
+					k = true;
+				} else if (this.cardAt(i).rank().equals("queen")) {
+					q = true;
+				} else if (this.cardAt(i).rank().equals("jack")) {
+					j = true;
 				}
-				else if (this.cardAt(i).rank()=="queen")
-				{
-					q=true;
-				}
-				else if (this.cardAt(i).rank()=="jack")
-				{
-					j=true;
+			}*/
+			if (selectedCards.size() == 3) {
+				for (int i = 0; i < selectedCards.size(); i++) {
+					if (cardAt(selectedCards.get(i)).rank().equals("king")) {
+						k = true;
+					} else if (cardAt(selectedCards.get(i)).rank().equals("queen")) {
+						q = true;
+					} else if (cardAt(selectedCards.get(i)).rank().equals("jack")) {
+						j = true;
+					}
 				}
 
+
 			}
-			if (j && q && k)
-			{
+			if (k && q && j) {
 				return true;
-			}
-			else
-			{
-				return false;
 			}
 
 		}
 		return false;
 	}
 
-	/*public static printCards(ElevensBoard board)
-	{
-		List<Integer> cIndexes = board.cardIndexes();
-		for(int i = 0;i<cIndexes.size();i++)
-		{
-			System.out.println(board.toString());
-		}
-	}*/
 }
